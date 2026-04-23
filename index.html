@@ -3,248 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【2026 國旅振興專案】日月潭 VIP尊榮湖畔秘境二日遊!</title>
+    <title>媒體識讀教學用--FB 爆紅貼文：【桃園中壢】隱藏版祕境曝光！</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* 閃爍動畫 (營造急迫感) */
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-        .animate-blink {
-            animation: blink 1s infinite;
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+        
+        body { 
+            font-family: 'Noto Sans TC', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #f0f2f5; 
         }
 
-        /* 跑馬燈動畫 */
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-        .animate-marquee {
-            display: inline-block;
-            white-space: nowrap;
-            animation: marquee 15s linear infinite;
-        }
+        .hashtag { color: #1877F2; cursor: pointer; }
+        .hashtag:hover { text-decoration: underline; }
 
-        /* 浮動假通知彈窗動畫 */
-        @keyframes slideUpFade {
-            0% { transform: translateY(100%); opacity: 0; }
-            10% { transform: translateY(0); opacity: 1; }
-            90% { transform: translateY(0); opacity: 1; }
-            100% { transform: translateY(100%); opacity: 0; }
+        /* 讚動畫 */
+        @keyframes pop {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
         }
-        .fake-toast-animation {
-            animation: slideUpFade 6s ease-in-out forwards;
-        }
+        .like-active { color: #1877F2; font-weight: bold; animation: pop 0.3s ease-in-out; }
+        .like-active svg { fill: #1877F2; stroke: #1877F2; }
 
-        /* 隱藏捲軸但可滾動 */
-        ::-webkit-scrollbar {
-            width: 0px;
-            background: transparent;
+        /* 教學標籤樣式 */
+        .edu-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            z-index: 10;
         }
     </style>
 </head>
-<body class="bg-gray-100 font-sans pb-32 relative overflow-x-hidden">
+<body class="py-10 flex justify-center px-4">
 
-    <!-- 頂部緊急跑馬燈 -->
-    <div class="bg-red-600 text-white text-sm py-1 overflow-hidden relative w-full font-bold">
-        <div class="animate-marquee">
-            國家級補助專案開跑！最後名額釋出！請盡速匯款保留資格！ 國家級補助專案開跑！最後名額釋出！請盡速匯款保留資格！
-        </div>
-    </div>
+    <!-- 貼文卡片主體 -->
+    <div class="bg-white max-w-[500px] w-full rounded-xl shadow-md overflow-hidden relative">
+        
+        <!-- 教學用提示 (僅教學用) -->
+        <div class="edu-badge font-medium">媒體識讀教學用</div>
 
-    <!-- 教學用浮水印 (左下方) -->
-    <div class="fixed bottom-28 left-4 z-[60] bg-black/60 text-white px-3 py-1 rounded-full text-xs font-bold pointer-events-none">
-        AI旅遊書課程 媒體識讀教學用
-    </div>
-
-    <main class="max-w-md mx-auto bg-white shadow-xl min-h-screen relative">
-        <!-- 大標題 -->
-        <div class="bg-gradient-to-b from-yellow-100 to-white p-4 text-center">
-            <h1 class="text-2xl md:text-3xl font-black text-red-600 leading-tight">
-                【2026 國旅振興專案】<br>
-                <span class="text-blue-800">日月潭 VIP 尊榮湖畔秘境二日遊!</span>
-            </h1>
-        </div>
-
-        <!-- 主視覺圖片與閃爍標籤 -->
-        <div class="relative w-full">
-            <!-- 已更換為使用者上傳的圖片檔名 -->
-            <img src="日月潭圖.jpg" alt="日月潭空拍照片" class="w-full h-auto object-cover min-h-[200px] bg-gray-200">
-            
-            <div class="absolute top-4 left-4 bg-red-600 text-white font-black px-4 py-2 text-xl rounded-full border-2 border-white shadow-[0_0_15px_rgba(255,0,0,0.8)] animate-blink transform -rotate-6">
-                限量 50組
+        <!-- 頂部資訊：網紅頭像與名稱 -->
+        <div class="flex items-center px-4 py-3 gap-3">
+            <div class="relative">
+                <img src="https://i.pravatar.cc/150?img=32" class="w-10 h-10 rounded-full border border-gray-200" alt="頭像">
+                <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></div>
             </div>
-            <div class="absolute bottom-4 right-4 bg-yellow-400 text-red-700 font-black px-4 py-2 text-xl rounded-sm border-2 border-red-600 shadow-lg transform rotate-3">
-                國家級補助
+            <div class="flex flex-col">
+                <div class="flex items-center gap-1">
+                    <span class="font-bold text-[15px] hover:underline cursor-pointer">愛旅遊的甜甜 Claire</span>
+                    <svg class="text-blue-500 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
+                </div>
+                <div class="flex items-center text-gray-500 text-xs gap-1">
+                    <span>1 小時前</span> · <span>桃園市</span> · <i class="fa-solid fa-earth-americas"></i>
+                </div>
+            </div>
+            <div class="ml-auto text-gray-400 cursor-pointer hover:bg-gray-100 p-2 rounded-full">
+                <i class="fa-solid fa-ellipsis"></i>
             </div>
         </div>
 
-        <!-- 破盤特殺文案 -->
-        <div class="p-5 text-center space-y-3">
-            <h2 class="text-xl font-bold text-gray-800 bg-yellow-200 inline-block px-3 py-1">破盤特殺!保證全網最低價</h2>
-            <p class="text-gray-700 font-bold">還在人擠人走步道嗎?這次我們帶您解鎖日月潭的隱藏版玩法!</p>
-            <p class="text-red-600 font-black text-lg underline decoration-dashed">獨家取得 2026年特許經營權,享受最頂級的湖畔假期。</p>
+        <!-- 內文文字 -->
+        <div class="px-4 pb-3 text-[15px] leading-relaxed text-gray-800">
+            桃園人都不說的私藏祕境！在中壢近郊竟然有『台版小京都』？👘✨<br><br>
+            門票只要 50 元，復古日式建築隨手拍都是大片📸，重點是：完全沒人，隨便你拍！<br><br>
+            真的不敢相信中壢竟然有這麼美的地方，紅色的拉門配上懷舊的木造平房，瞬間有種穿越時空到日本的錯覺～🇯🇵❤️<br><br>
+            趁現在還沒爆紅快衝！週末約閨蜜來這裡野餐看書也超 Chill 的啦～☕️📖<br><br>
+            <span class="hashtag">#桃園景點</span> <span class="hashtag">#中壢美食</span> <span class="hashtag">#台版小京都</span> <span class="hashtag">#IG打卡聖地</span> <span class="hashtag">#週末好去處</span> <span class="hashtag">#私藏名單</span>
         </div>
 
-        <!-- 價格與倒數計時區 -->
-        <div class="bg-red-50 p-6 border-y-4 border-red-500">
-            <div class="flex flex-col items-center justify-center">
-                <span class="text-gray-500 line-through text-lg font-bold">原價: NT$ 12,800/人</span>
-                <div class="flex items-baseline mt-1">
-                    <span class="text-xl text-red-600 font-black mr-1">今日瘋搶價:</span>
-                    <span class="text-5xl font-black text-red-600">NT$ 3,499</span>
-                    <span class="text-xl text-red-600 font-bold ml-1">/人</span>
-                </div>
-                <p class="text-sm text-gray-600 mt-2 font-medium">(含頂級湖景雙人房一晚、米其林三星無菜單晚餐、獨家秘境體驗)</p>
+        <!-- 貼文圖片：使用上傳的馬祖新村圖片 -->
+        <div class="relative bg-gray-200 min-h-[300px]">
+            <img src="馬祖新村1.jpg" class="w-full h-auto cursor-pointer" alt="馬祖新村實拍圖片">
+        </div>
 
-                <!-- 倒數計時器 -->
-                <div class="mt-5 bg-black text-white px-6 py-3 rounded-lg flex flex-col items-center w-full shadow-inner">
-                    <span class="text-yellow-400 font-bold mb-1 animate-blink"><i class="fa-solid fa-clock"></i> 優惠倒數,錯過捶心肝!</span>
-                    <div class="text-3xl font-mono font-bold tracking-widest" id="countdown">01:23:45</div>
-                </div>
+        <!-- 按讚與留言統計 -->
+        <div class="px-4 py-2.5 flex items-center border-b border-gray-200 mx-4">
+            <div class="flex -space-x-1">
+                <div class="bg-blue-500 rounded-full p-1 border-2 border-white"><svg class="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"></path></svg></div>
+                <div class="bg-red-500 rounded-full p-1 border-2 border-white"><svg class="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg></div>
+            </div>
+            <span class="text-gray-500 text-[14px] ml-1.5 hover:underline cursor-pointer">1,288 人按讚</span>
+            <div class="ml-auto flex gap-3 text-gray-500 text-[14px]">
+                <span class="hover:underline cursor-pointer">56 則留言</span>
+                <span class="hover:underline cursor-pointer">125 次分享</span>
             </div>
         </div>
 
-        <!-- 假進度條與熱銷提示 -->
-        <div class="px-5 py-4 bg-yellow-50">
-            <div class="text-red-600 font-bold text-center mb-2 animate-blink"><i class="fa-solid fa-fire"></i> 補助專案僅剩最後2組!</div>
-            <div class="w-full bg-gray-300 rounded-full h-4 relative overflow-hidden border border-gray-400">
-                <div class="bg-gradient-to-r from-red-500 to-red-600 h-4 rounded-full" style="width: 96%"></div>
-            </div>
-            <p class="text-xs text-gray-500 text-center mt-2">已搶購 48/50組, 即將完售</p>
-        </div>
-
-        <!-- 專案獨家三大保證 -->
-        <div class="p-5 bg-white space-y-6">
-            <h3 class="text-2xl font-black text-center text-blue-900 mb-6 border-b-2 border-blue-200 pb-2">+ 專案獨家三大保證 +</h3>
-
-            <!-- 雷點 1:高鐵日月潭湖畔站 -->
-            <div class="flex gap-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl">
-                    <i class="fa-solid fa-train-tram"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg text-gray-800">交通大升級,高鐵直達免轉車!</h4>
-                    <p class="text-gray-600 text-sm mt-1">告別長途客運的勞累!本專案包含最新開通的<strong class="text-red-600 bg-yellow-100">「高鐵日月潭湖畔站」</strong>專屬車票。搭乘高鐵直達日月潭,出站走路1分鐘直接抵達水社碼頭!</p>
-                </div>
-            </div>
-
-            <!-- 雷點 2:拉魯島登島露營 -->
-            <div class="flex gap-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-2xl">
-                    <i class="fa-solid fa-campground"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg text-gray-800">歷史首度開放:拉魯島星空露營!</h4>
-                    <p class="text-gray-600 text-sm mt-1">我們獨家取得官方特許,今晚帶您登上日月潭正中心的<strong class="text-red-600 bg-yellow-100">「拉魯島」</strong>。在島上舉辦盛大營火晚會與百萬煙火秀!</p>
-                </div>
-            </div>
-
-            <!-- 住宿 -->
-            <div class="flex gap-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 text-2xl">
-                    <i class="fa-solid fa-hotel"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg text-gray-800">頂級五星住宿體驗</h4>
-                    <p class="text-gray-600 text-sm mt-1">入住五星級湖畔飯店,保證間間面湖,尊榮享受無需妥協。</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- 假評價區 -->
-        <div class="bg-gray-100 p-5">
-            <h3 class="text-xl font-black text-center text-gray-800 mb-4">旅客好評推薦(5.0 ⭐⭐⭐⭐⭐)</h3>
-            <div class="space-y-3">
-                <div class="bg-white p-4 rounded-lg shadow border border-gray-200">
-                    <div class="flex items-center mb-2">
-                        <div class="w-8 h-8 rounded-full bg-pink-200 flex items-center justify-center font-bold text-pink-600">林</div>
-                        <div class="ml-2 font-bold text-gray-800">林小姐(台北)</div>
-                        <div class="ml-auto text-yellow-500 text-sm">★★★★★</div>
-                    </div>
-                    <p class="text-sm text-gray-600">搭高鐵直達日月潭真的太爽了,以前都要到台中轉車超麻煩!這專案 CP值太高!</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- 報名資訊 -->
-        <div class="p-5 bg-white mb-8 border-t-4 border-dashed border-gray-300">
-            <h3 class="text-lg font-bold text-gray-800 mb-3"><i class="fa-solid fa-circle-info"></i> 報名資訊與匯款方式</h3>
-            <ul class="text-sm text-gray-700 space-y-2 font-medium bg-gray-50 p-4 rounded">
-                <li><strong class="text-gray-900">集合地點:</strong> 高鐵日月潭湖畔站 1號出口</li>
-                <li><strong class="text-gray-900">付款方式:</strong> 配合補助政策,<strong class="text-red-600">請先匯款 $1,000訂金保留名額</strong>,尾款當天付現即可。</li>
-                <li><strong class="text-gray-900">主辦單位:</strong> 台灣好遊秘境旅行社(<span class="text-red-500 font-bold">統一編號:未提供</span>)</li>
-            </ul>
-        </div>
-    </main>
-
-    <!-- 底部固定按鈕 -->
-    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-3 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50">
-        <div class="max-w-md mx-auto">
-            <button onclick="showScamAlert()" class="w-full bg-[#06C755] hover:bg-[#05b34c] text-white font-black text-lg py-4 rounded-xl shadow-lg transition-transform transform hover:scale-105 flex flex-col justify-center items-center relative">
-                <div class="flex items-center gap-2">
-                    <i class="fa-brands fa-line text-2xl"></i> 加入官方LINE 索取匯款帳號
-                </div>
-                <span class="text-[10px] font-normal text-white/80">ID: @SunMoonVIP_2026</span>
+        <!-- 互動按鈕區 -->
+        <div class="flex px-2 py-1 border-b border-gray-200 mx-4">
+            <button id="like-btn" onclick="toggleLike()" class="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg hover:bg-gray-100 text-gray-600 transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.704a2 2 0 0 1 1.94 2.448l-1.2 6A2 2 0 0 1 17.504 21H8a2 2 0 0 1-2-2v-9a2 2 0 0 1 .586-1.414l5-5a2 2 0 1 1 2.828 2.828L11.828 10H14z"></path></svg>
+                <span id="like-text">讚</span>
+            </button>
+            <button class="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg hover:bg-gray-100 text-gray-600 transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 0 1-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                <span>留言</span>
+            </button>
+            <button class="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg hover:bg-gray-100 text-gray-600 transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 1 1 0-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 1 0 5.367-2.684 3 3 0 0 0-5.367 2.684zm0 9.316a3 3 0 1 0 5.368 2.684 3 3 0 0 0-5.368-2.684z"></path></svg>
+                <span>分享</span>
             </button>
         </div>
-    </div>
 
-    <!-- 假成交彈窗 -->
-    <div id="fake-toast" class="fixed bottom-24 left-4 right-4 md:left-auto md:right-4 md:w-80 bg-gray-800 text-white p-4 rounded-lg shadow-2xl flex items-center gap-3 z-40 opacity-0 pointer-events-none border-l-4 border-green-500">
-        <i class="fa-solid fa-circle-check text-green-400 text-2xl"></i>
-        <div>
-            <p class="font-bold text-sm">【系統提示】最新成交</p>
-            <p id="toast-text" class="text-xs text-gray-300">高雄的王先生剛剛已匯款保留 6個名額...</p>
+        <!-- 留言區範例 -->
+        <div class="px-4 py-4 space-y-4">
+            <div class="flex gap-2">
+                <img src="https://i.pravatar.cc/150?img=11" class="w-8 h-8 rounded-full" alt="User">
+                <div class="flex flex-col flex-1">
+                    <div class="bg-gray-100 rounded-2xl px-3 py-2">
+                        <div class="font-bold text-xs hover:underline cursor-pointer">王小明</div>
+                        <div class="text-[14px]">真的假的！中壢有這種地方？我身為中壢人竟然不知道😂</div>
+                    </div>
+                    <div class="flex gap-3 text-xs text-gray-500 mt-1 ml-2">
+                        <span class="cursor-pointer hover:underline">讚</span>
+                        <span class="cursor-pointer hover:underline">回覆</span>
+                        <span>45 分鐘</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="https://i.pravatar.cc/150?img=20" class="w-8 h-8 rounded-full" alt="User">
+                <div class="flex flex-col flex-1">
+                    <div class="bg-gray-100 rounded-2xl px-3 py-2">
+                        <div class="font-bold text-xs hover:underline cursor-pointer">Emily Chen</div>
+                        <div class="text-[14px]">求地址！下週想帶小孩去拍美照～～</div>
+                    </div>
+                    <div class="flex gap-3 text-xs text-gray-500 mt-1 ml-2">
+                        <span class="cursor-pointer hover:underline">讚</span>
+                        <span class="cursor-pointer hover:underline">回覆</span>
+                        <span>32 分鐘</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 輸入留言框 -->
+            <div class="flex gap-2 items-center">
+                <img src="https://i.pravatar.cc/150?img=8" class="w-8 h-8 rounded-full border border-gray-100" alt="Your avatar">
+                <div class="flex-1 bg-gray-100 rounded-full px-4 py-2 text-[14px] text-gray-500 cursor-text">
+                    留言……
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- 簡易互動腳本 -->
     <script>
-        // 假倒數計時器邏輯
-        let timeInSeconds = 1 * 3600 + 23 * 60 + 45;
-        const countdownEl = document.getElementById('countdown');
-
-        function updateTimer() {
-            if (timeInSeconds <= 0) timeInSeconds = 0;
-            const h = Math.floor(timeInSeconds / 3600);
-            const m = Math.floor((timeInSeconds % 3600) / 60);
-            const s = timeInSeconds % 60;
-            const format = (num) => num.toString().padStart(2, '0');
-            countdownEl.innerHTML = `${format(h)}:${format(m)}:${format(s)}`;
-            timeInSeconds--;
-        }
-        setInterval(updateTimer, 1000);
-        updateTimer();
-
-        // 假彈窗循環邏輯
-        const toast = document.getElementById('fake-toast');
-        const toastText = document.getElementById('toast-text');
-        const fakeNames = ["高雄的王先生", "台北的李小姐", "台中的陳阿姨", "花蓮的林先生", "嘉義的郭大哥"];
-
-        function triggerToast() {
-            const randomName = fakeNames[Math.floor(Math.random() * fakeNames.length)];
-            const randomNum = Math.floor(Math.random() * 4) + 2;
-            toastText.innerText = `${randomName}剛剛已匯款保留 ${randomNum}個名額...`;
+        function toggleLike() {
+            const btn = document.getElementById('like-btn');
+            const text = document.getElementById('like-text');
+            const svg = btn.querySelector('svg');
             
-            toast.classList.add('fake-toast-animation');
-            toast.style.opacity = "1";
-
-            setTimeout(() => {
-                toast.classList.remove('fake-toast-animation');
-                toast.style.opacity = "0";
-            }, 6000);
-        }
-
-        setInterval(triggerToast, 12000);
-        setTimeout(triggerToast, 2000);
-
-        // 防詐騙提醒
-        function showScamAlert() {
-            const msg = "【媒體識讀提醒】\n\n這是一個教學用詐騙網頁範例。\n\n請注意以下疑點：\n1. 台灣目前沒有「高鐵日月潭站」。\n2. 拉魯島是原住民聖地，嚴禁登島露營。\n3. 旅行社未提供統一編號。\n4. 價格異常低廉且要求預付訂金。";
-            alert(msg);
+            if (btn.classList.contains('like-active')) {
+                btn.classList.remove('like-active');
+                text.textContent = '讚';
+                svg.setAttribute('fill', 'none');
+                svg.setAttribute('stroke', 'currentColor');
+            } else {
+                btn.classList.add('like-active');
+                text.textContent = '已按讚';
+                // 使用 alert 來模擬教學互動 (僅教學目的)
+                setTimeout(() => {
+                    alert('【媒體識讀教學：網紅貼文查證重點】\n\n1. 地點查證：這張照片雖然宣傳「中壢祕境」，但照片背景的現代大樓是否符合「祕境」感？\n2. 標籤分析：這其實是「馬祖新村文創園區」，並非私人祕境。\n3. 文字誇大：標註「完全沒人」可能是刻意挑選冷門時段，並非景點常態。\n4. 入園費用：請查證官網目前的營運規範與收費標準。');
+                }, 500);
+            }
         }
     </script>
+
 </body>
 </html>
